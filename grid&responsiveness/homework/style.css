@@ -15,7 +15,6 @@
 .box {
     padding-right: 2rem;
     padding-left: 2rem;
-
     display: grid;
     grid-gap: 10px;
     grid-template-rows: (1fr, 1fr, 1fr);
