@@ -1,0 +1,49 @@
+.container {
+    background-color: pink;
+
+    display: grid;
+    grid-template-rows: 30px 200px 20px;
+    grid-template-columns: 100px 500px;
+    grid-template-areas:
+        "hd hd"
+        "side main"
+        "ft ft";
+
+    grid-gap: 10px;
+
+    @media(max-width:400px) {
+        /*if else type condition hai */
+        grid-gap: 25px;
+    }
+}
+
+.box {
+    background-color: skyblue;
+}
+
+
+#header {
+    color: red;
+    border: 1px solid black;
+    grid-area: hd;
+
+}
+
+#sidebar {
+    color: red;
+    border: 1px solid black;
+    grid-area: side;
+
+}
+
+#content {
+    color: red;
+    border: 1px solid black;
+    grid-area: main;
+}
+
+#footer {
+    color: red;
+    border: 1px solid black;
+    grid-area: ft;
+}

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    background-color: rgb(228, 220, 220);
+    height: 900px;
+    width: auto;
+
+
+}
+
+.box {
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: (1fr, 1fr, 1fr);
+    grid-template-columns: (1fr, 1fr);
+    grid-template-areas:
+        "wr ds"
+        "pr ylw"
+        "pnk grn";
+
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.world {
+    background-color: white;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    grid-area: wr;
+
+}
+
+.design {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    background-color: white;
+    grid-area: ds;
+}
+
+.purple {
+    border: 1px solid black;
+    grid-area: pr;
+    background-color: white;
+}
+
+.green {
+    border: 1px solid black;
+    background-color: white;
+    grid-area: grn;
+}
+
+.yellow {
+    border: 1px solid black;
+    background-color: white;
+    grid-area: ylw;
+}
+
+.pink {
+    border: 1px solid black;
+    background-color: white;
+    grid-area: pnk;
+}
