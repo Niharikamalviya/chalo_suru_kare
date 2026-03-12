@@ -1,0 +1,28 @@
+.container {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    border: 3px solid red;
+    display: flex;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    border: 2px solid orange;
+    background-color: yellow;
+    transition: 2s;
+    /*time-function time between style 1 to style 2 */
+    /* kitni der baad start krna chahte ho delay */
+    transition-property: background-color;
+    transition-delay: 1s;
+    /* transition : 1property 2duration 3timing-function 4delay ; */
+    transition: all 3s cubic-bezier(1, 0.56, 0.29, 0.76) 1s;
+}
+
+.box:hover {
+    background-color: pink;
+    transform: rotate(45deg);
+    transform: translateX(100px);
+}
