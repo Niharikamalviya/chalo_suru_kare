@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .box {
+
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #margin {
+            margin: 30px;
+            text-align: center;
+            padding: 20px;
+            background-color: lightpink;
+        }
+
+        #border {
+            border: 5px solid yellow;
+            height: 400px;
+            background-color: yellow;
+            margin-top: 20px;
+        }
+
+        #padding {
+            border: 1px solid skyblue;
+            height: 300px;
+            width: 400px;
+            margin-left: 50px;
+            margin-top: 25px;
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        #content {
+            height: 200px;
+            width: 300px;
+            border: 1px solid wheat;
+            margin-left: 50px;
+            background-color: wheat;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .heading {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <p> ~>according to the Box Model concept every element on a page is a rectangular box and may have width , height,
+        borders, and margins.</p>
+    <p><span class="heading">Margin:- </span>margin use to gap or space between two boxes,container or elements </p>
+    <p><span class="heading">Padding:- </span>space or gap between text or content and border is called padding example
+        space between "margin" and
+        border is
+        padding area</p>
+    <div class="container">
+        <div class="box" id="margin">Margin
+            <div id="border"> Border
+                <div id="padding">Padding
+                    <div id="content">Content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
