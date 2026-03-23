@@ -49,8 +49,8 @@ p {
 
 .section-fluid {
     position: relative;
-    width: auto;
-    display: flex;
+    width: 100%;
+
 }
 
 [type="radio"]:checked,
@@ -295,6 +295,7 @@ h5 {
 }
 
 .desc-sec {
+
     padding-top: 20px;
     padding-bottom: 30px;
     transition: all 250ms linear;
@@ -302,6 +303,7 @@ h5 {
     overflow: hidden;
     pointer-events: none;
     transform: translateY(20px);
+
 }
 
 .desc-sec.accor-2 {
