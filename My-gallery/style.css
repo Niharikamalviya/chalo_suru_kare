@@ -38,6 +38,7 @@
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
+
 }
 
 .gallery-img {
@@ -46,4 +47,36 @@
     filter: grayscale(100%);
     box-shadow: 0 0 20px #333;
     object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+}
+
+.caption {
+    position: absolute;
+    padding: 25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255))
+}
+
+
+.card:hover figcaption {
+    transform: scale(1.03);
+    opacity: 1;
 }
